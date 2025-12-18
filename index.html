@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Zone</title>
+    <style>
+        body {
+            background-color: black;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        .glitch {
+            font-size: 3em;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 3px 3px #f00, -3px -3px #00f; }
+            50% { text-shadow: -3px -3px #f00, 3px 3px #00f; }
+            100% { text-shadow: 3px 3px #f00, -3px -3px #00f; }
+        }
+        .terminal {
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid #0f0;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            width: 80%;
+            text-align: left;
+        }
+        .blink {
+            animation: blink 0.7s infinite alternate;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glitch">Welcome to the Hacker Zone</h1>
+    <div class="terminal">
+        <p>> Access Granted...</p>
+        <p>> Loading System <span class="blink">█</span></p>
+    </div>
+    <div class="gif-container">
+        <img src="https://media2.giphy.com/media/Py14huRszG7y8/200w.gif?cid=6c09b9526ow4v27iuzv56z27ne46tsxm14sfdj72wq334xet&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Hacker Laugh" width="300">
+    </div>
+</body>
+</html>
